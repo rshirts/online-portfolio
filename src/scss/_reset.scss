@@ -1,3 +1,4 @@
+//set all box sizing to border-box and inherit incase we want to overwrite it.
 html {
   box-sizing: border-box;
 }
@@ -5,6 +6,7 @@ html {
   box-sizing: inherit;
 }
 
+//standardize body dimensions 
 body {
   margin: 0;
   padding: 0;
