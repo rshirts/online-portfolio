@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './main.scss';
+import {Home} from './Home.scss';
 // This is the main container for the website.
 class Main extends Component {
   render() {
     return (
-      <main>
+      <div className={Home}>
         What's up from main!
-      </main>
+      </div>
     );
   }
 }

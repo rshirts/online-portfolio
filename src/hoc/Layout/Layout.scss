@@ -3,3 +3,8 @@
 body {
   background-image: url('../../assets/img/background.jpg')
 }
+
+main {
+  //Calculate the height of the page - 60px for the footer.
+  min-height: calc(100vh - 60px);
+}

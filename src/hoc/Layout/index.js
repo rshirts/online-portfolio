@@ -3,6 +3,9 @@ import './Layout.scss';
 import Header from '../../components/Header';
 
 class Layout extends Component {
+  state = {
+    showMenu: false
+  }
   render() {
     return (
       <div>
