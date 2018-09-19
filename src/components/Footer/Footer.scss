@@ -1,0 +1,9 @@
+@import '../../scss/config';
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primaryColor, 10);
+  color: set-text-color($primaryColor);
+  height: 60px;
+}

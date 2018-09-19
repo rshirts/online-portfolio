@@ -1,0 +1,35 @@
+@import '../_NavShared.scss';
+
+.menu {
+  @include NavItem;
+  margin: 0;
+  padding: 0;
+  background: darken($primaryColor, 5);
+  list-style: none;
+  transform: translateY(-100%);
+  opacity: 0.9;
+}
+
+.item {
+
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 300;
+  color: set-text-color($primaryColor);
+  text-decoration: none;
+  @include easeOut;
+
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+.active {
+  color: $secondaryColor;
+}

@@ -1,0 +1,14 @@
+@import '../../../scss/config';
+
+@mixin NavItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  @include easeOut;
+
+  &.show {
+    //slide in from top
+    transform: translateY(0);
+  }
+}

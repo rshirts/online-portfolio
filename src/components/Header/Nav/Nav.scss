@@ -1,0 +1,9 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  // visibility: hidden;
+}

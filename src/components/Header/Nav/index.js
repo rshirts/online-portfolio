@@ -1,11 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './Nav.scss';
+import Branding from './Branding';
+import Menu from './Menu';
 
 const Nav = (props) => {
   return (
-    <div>
-      NavBar
-    </div>
+    <nav>
+      <Branding />
+      <Menu />
+    </nav>
   )
-}
+};
 
-export default Nav
+export default Nav;
