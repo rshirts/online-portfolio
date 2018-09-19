@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { home } from './Home.scss';
+import { home, lgHeading, smHeading, textSecondary, name } from './Home.scss';
+
 // This is the main container for the website.
 class Home extends Component {
+
   render() {
-    return <div className={home}>What's up from Home!</div>;
+    const joinedClasses = [lgHeading, name];
+    return (
+      <div className={home}>
+        <h1 className={joinedClasses.join(' ')}>
+          Randee <span className={textSecondary}>Shirts</span>
+        </h1>
+      </div>
+    )
   }
 }
 

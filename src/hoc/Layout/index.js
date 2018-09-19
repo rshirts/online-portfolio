@@ -10,7 +10,6 @@ class Layout extends Component {
 
   //This will toggle the state for showing the when the menu button is clicked or elsewhere.
   handleMenuButtonClick = () => {
-    console.log(this.state.showMenu);
     this.setState ((prevState) => {
       return {showMenu: !prevState.showMenu}
     })
