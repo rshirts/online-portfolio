@@ -1,24 +1,24 @@
 import React from 'react'
-import {menu, item, link} from './Menu.scss';
+import {menu, item, link, show} from './Menu.scss';
 
-const Menu = () => {
+const Menu = (props) => {
 
-
+  const attachedMenuClasses = props.showMenu ? [menu, show] : [menu]
 
   return (
-    <div className={menu}>
+    <div className={attachedMenuClasses.join(' ')}>
       <ul>
         <li className={item}>
-          <a href="" class={link}>HOME</a>
+          <a href="" className={link}>HOME</a>
         </li>
         <li className={item}>
-          <a href="about.html" class={link}>ABOUT</a>
+          <a href="about.html" className={link}>ABOUT</a>
         </li>
         <li className={item}>
-          <a href="work.html" class={link}>MY WORK</a>
+          <a href="work.html" className={link}>MY WORK</a>
         </li>
         <li className={item}>
-          <a href="contact.html" class={link}>HOW TO REACH ME</a>
+          <a href="contact.html" className={link}>HOW TO REACH ME</a>
         </li>
       </ul>
     </div>

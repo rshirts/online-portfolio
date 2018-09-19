@@ -1,12 +1,16 @@
 import React from 'react'
-import {Line, Button} from './MenuButton.scss'
+import {line, button, close} from './MenuButton.scss'
 
 const MenuButton = (props) => {
+
+  //Configure Menu to be open or closed.
+  const attachedClasses = props.showMenu ? [button, close] : [button];
+
   return (
-    <div className={Button}>
-      <div className={Line}></div>
-      <div className={Line}></div>
-      <div className={Line}></div>
+    <div onClick={props.click} className={attachedClasses.join(' ')}>
+      <div className={line}></div>
+      <div className={line}></div>
+      <div className={line}></div>
     </div>
   )
 }

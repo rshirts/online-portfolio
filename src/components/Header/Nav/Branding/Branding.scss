@@ -1,12 +1,12 @@
 @import '../NavShared';
 
-.Branding {
+.branding {
   @include NavItem;
   background: rgba($primaryColor, 0.9);
   transform: translateY(100%);
 }
 
-.Portrait {
+.portrait {
   object-fit: fill;
   width: 250px;
   height: 250px;

@@ -1,10 +1,13 @@
 import React from 'react';
-import classes from './Branding.scss';
+import {branding, portrait, show} from './Branding.scss';
 
-const Branding = () => {
+const Branding = (props) => {
+
+  let attachedClasses = props.showMenu ? [branding, show] : [branding]
+
   return (
-    <div className={classes.Branding}>
-      <div className={classes.Portrait} />
+    <div className={attachedClasses.join(' ')}>
+      <div className={portrait} />
     </div>
   );
 };

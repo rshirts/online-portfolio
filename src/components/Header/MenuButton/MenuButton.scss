@@ -1,6 +1,6 @@
 @import '../../../scss/config';
 
-.Button {
+.button {
   position: absolute;
   z-index: 3;
   right: 35px;
@@ -9,7 +9,7 @@
   @include easeOut;
 }
 
-.Line {
+.line {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
@@ -17,9 +17,10 @@
   @include easeOut;
 }
 
-.Close {
+//Rotate Menu lines into X
+.close {
   transform: rotate(180deg);
-  .Line {
+  .line {
     //line 1 - Rotate
     &:nth-child(1) {
       // transform: rotate(45deg) translate(5px, 5px)
