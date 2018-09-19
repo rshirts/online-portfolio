@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {Home} from './Home.scss';
+import { home } from './Home.scss';
 // This is the main container for the website.
-class Main extends Component {
+class Home extends Component {
   render() {
-    return (
-      <div className={Home}>
-        What's up from main!
-      </div>
-    );
+    return <div className={home}>What's up from Home!</div>;
   }
 }
 
 const mapStateToProps = (state) => ({
-  person : state.main.person
+  person : state.home.person
 });
 
 const mapDispatchToProps = (disptach) => ({});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Main);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

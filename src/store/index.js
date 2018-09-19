@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 
 //Redux - Reducers
-import mainReducer from './reducers/main';
+import homeReducer from './reducers/home';
 
 // *** Constants ***
 
@@ -13,7 +13,7 @@ const composeEnhancers =
 
 //combine reducers into one.
 const rootReducer = combineReducers({
-  main : mainReducer
+  home : homeReducer
 });
 
 //create a store object and assign rootReducer

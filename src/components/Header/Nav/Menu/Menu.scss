@@ -10,10 +10,6 @@
   opacity: 0.9;
 }
 
-.item {
-
-}
-
 .link {
   display: inline-block;
   position: relative;
@@ -32,4 +28,21 @@
 
 .active {
   color: $secondaryColor;
+}
+
+.item {
+  transform: translateX(100vw);
+  @include easeOut;
+
+  &.showItem {
+    //slide in from right
+    transform: translateX(0);
+  }
+}
+
+// delay each nav item slide by 0.1s
+@for $x from 1 through 4 {
+  .item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
+  }
 }
