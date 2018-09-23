@@ -4,7 +4,7 @@ import {line, button, close} from './MenuButton.scss'
 const MenuButton = (props) => {
 
   //Configure Menu to be open or closed.
-  const attachedClasses = props.showMenu ? [button, close] : [button];
+  const attachedClasses = props.showNavMenu ? [button, close] : [button];
 
   return (
     <div onClick={props.click} className={attachedClasses.join(' ')}>

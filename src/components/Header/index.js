@@ -6,8 +6,8 @@ import Nav from './Nav'
 const Header = (props) => {
   return (
     <header>
-      <MenuButton showMenu={props.showMenu} click={props.click} />
-      <Nav showMenu={props.showMenu} click={props.click} />
+      <MenuButton showNavMenu={props.showMenu} click={props.click} />
+      <Nav showNavMenu={props.showMenu} click={props.click} />
     </header>
   )
 };

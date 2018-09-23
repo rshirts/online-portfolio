@@ -1,10 +1,10 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
-import {item, show, active} from './MenuItem.scss'
+import {item, show, active} from './NavMenuItem.scss'
 
 const MenuItem = (props) => {
 
-  const attachedItemClasses = props.showMenu ? [item, show] : [item];
+  const attachedItemClasses = props.showNavMenu ? [item, show] : [item];
 
   return (
     <li className={attachedItemClasses.join(' ')}>

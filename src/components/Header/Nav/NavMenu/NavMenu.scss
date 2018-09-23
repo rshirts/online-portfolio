@@ -1,7 +1,7 @@
 @import '../_NavShared.scss';
 
-.menu {
-  @include NavItem;
+.navMenu {
+  @include navItem;
   margin: 0;
   padding: 0;
   background: darken($primaryColor, 5);

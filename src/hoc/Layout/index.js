@@ -18,7 +18,7 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <Header showMenu={this.state.showMenu} click={this.handleMenuButtonClick} />
+        <Header showNavMenu={this.state.showMenu} click={this.handleMenuButtonClick} />
         <main>{this.props.children}</main>
         <Footer />
       </div>

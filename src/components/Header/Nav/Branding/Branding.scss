@@ -1,7 +1,7 @@
 @import '../NavShared';
 
 .branding {
-  @include NavItem;
+  @include navItem;
   background: rgba($primaryColor, 0.9);
   transform: translateY(100%);
 }

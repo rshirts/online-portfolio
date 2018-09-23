@@ -1,15 +1,15 @@
 import React from 'react';
 import './Nav.scss';
 import Branding from './Branding';
-import Menu from './Menu';
+import NavMenu from './NavMenu';
 import {show, hide} from './Nav.scss'
 
 const Nav = (props) => {
 
   return (
-    <nav className={props.showMenu ? show : hide} onClick={props.click}>
-      <Branding showMenu={props.showMenu} />
-      <Menu showMenu={props.showMenu} />
+    <nav className={props.showNavMenu ? show : hide} onClick={props.click}>
+      <Branding showNavMenu={props.showNavMenu} />
+      <NavMenu showNavMenu={props.showNavMenu} />
     </nav>
   )
 };

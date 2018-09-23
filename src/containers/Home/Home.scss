@@ -11,3 +11,16 @@
 .name {
   margin-top: 10vh;
 }
+
+.icons {
+  font-size: 2rem;
+
+  a {
+    padding: 0.4rem;
+    &:hover {
+      color: $secondaryColor;
+      @include easeOut();
+    }
+  }
+}
+
