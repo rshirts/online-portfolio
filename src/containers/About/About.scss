@@ -1,0 +1,21 @@
+@import '../../scss/config';
+
+.aboutInfo {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.bioImage{
+  margin: auto;
+  border-radius: 50%;
+  border: $secondaryColor 3px solid;
+}
+
+.bio {
+  grid-column-end: span 2;
+}

@@ -1,0 +1,7 @@
+@import '../../scss/config';
+
+.job {
+  background: lighten($primaryColor, 5);
+  padding: 0.5rem;
+  border-bottom: $secondaryColor 5px solid;
+}

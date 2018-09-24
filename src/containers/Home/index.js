@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { home, lgHeading, smHeading, textSecondary, name, icons} from './Home.scss';
+import { frame, lgHeading, smHeading, textSecondary, icons, title} from './Home.scss';
 import {FaGithub, FaLinkedin,  } from 'react-icons/fa'
 import ExternalLink from '../../components/ExternalLink'
 
 class Home extends Component {
   render() {
     return (
-      <div className={home}>
-        <h1 className={`${lgHeading} ${name}`}>
+      <div className={frame}>
+        <h1 className={`${lgHeading} ${title}`}>
           {this.props.person.firstName} <span className={textSecondary}>{this.props.person.lastName}</span>
         </h1>
         <h2 className={smHeading}>
@@ -29,6 +29,4 @@ const mapStateToProps = (state) => ({
   person : state.home.person
 });
 
-const mapDispatchToProps = (disptach) => ({});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps)(Home);

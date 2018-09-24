@@ -16,6 +16,18 @@ $backgroundOpacity: 0.9;
     color: $secondaryColor;
 }
 
+.frame {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  height: 100%;
+}
+
+.title {
+  margin-top: 10vh;
+}
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }

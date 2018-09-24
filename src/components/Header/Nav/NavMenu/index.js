@@ -8,7 +8,7 @@ const Menu = (props) => {
 
   return (
     <ul className={attachedMenuClasses.join(' ')}>
-      <NavMenuItem exact={props.exact} link='/' showNavMenu={props.showNavMenu}>HOME</NavMenuItem>
+      <NavMenuItem exact={props.exact} link='/home' showNavMenu={props.showNavMenu}>HOME</NavMenuItem>
       <NavMenuItem link='/about' showNavMenu={props.showNavMenu}>ABOUT</NavMenuItem>
       <NavMenuItem link='/work' showNavMenu={props.showNavMenu}>WORK</NavMenuItem>
       <NavMenuItem link='/contact' showNavMenu={props.showNavMenu}>CONTACT</NavMenuItem>

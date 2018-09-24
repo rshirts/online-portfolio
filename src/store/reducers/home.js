@@ -1,5 +1,3 @@
-import * as actionTypes from '../actions/actionTypes';
-
 const initalState = {
   person : {
     firstName : 'Randee',

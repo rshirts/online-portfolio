@@ -3,6 +3,9 @@ import thunk from 'redux-thunk';
 
 //Redux - Reducers
 import homeReducer from './reducers/home';
+import aboutReducer from './reducers/about';
+import contactReducer from './reducers/contact';
+import workReducer from './reducers/work';
 
 // *** Constants ***
 
@@ -13,7 +16,10 @@ const composeEnhancers =
 
 //combine reducers into one.
 const rootReducer = combineReducers({
-  home : homeReducer
+  home : homeReducer,
+  about: aboutReducer,
+  contact: contactReducer,
+  work: workReducer
 });
 
 //create a store object and assign rootReducer
