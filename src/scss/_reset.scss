@@ -17,18 +17,13 @@ body {
   color: setTextColor($primaryColor);
   height: 100%;
   background-attachment: fixed;
-  background-size: auto;
+  background-image: url('../../assets/img/background.jpg');
+}
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: rgba($primaryColor, $backgroundOpacity);
-  }
+main {
+  //Calculate the height of the page - 60px for the footer.
+  min-height: calc(100vh - 60px);
+  background: rgba($primaryColor, $backgroundOpacity);
 }
 
 a {

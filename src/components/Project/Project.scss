@@ -1,6 +1,19 @@
 @import '../../scss/config';
-@import '../../scss//buttons';
+@import '../../scss/buttons';
 
 .item {
-  max-width: 250px;
+  max-width: 350px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    border: 3px solid #fff;
+    opacity: 0.5;
+    @include easeOut;
+
+    &:hover {
+      opacity: 1;
+      border-color: $secondaryColor;
+    }
+  }
 }

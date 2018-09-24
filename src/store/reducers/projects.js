@@ -2,9 +2,23 @@ const initialState = {
   projects: [
     {
       name: 'Online Porfolio',
-      imagePath: '',
+      imageName: 'onlineportfolio.jpg',
       localRoute: '',
-      url: 'www.randeeshirts.com',
+      url: 'http://www.randeeshirts.com',
+      github: 'https://github.com/rshirts/online-portfolio'
+    },
+    {
+      name: 'Online Porfolio',
+      imageName: 'onlineportfolio.jpg',
+      localRoute: '',
+      url: 'http://www.randeeshirts.com',
+      github: 'https://github.com/rshirts/online-portfolio'
+    },
+    {
+      name: 'Online Porfolio',
+      imageName: 'onlineportfolio.jpg',
+      localRoute: '',
+      url: 'http://www.randeeshirts.com',
       github: 'https://github.com/rshirts/online-portfolio'
     },
   ]
