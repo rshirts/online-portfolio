@@ -1,10 +1,10 @@
 import React from 'react'
-import {menu, show} from './NavMenu.scss';
+import {navMenu, show} from './NavMenu.scss';
 import NavMenuItem from './NavMenuItem';
 
 const Menu = (props) => {
 
-  const attachedMenuClasses = props.showNavMenu ? [menu, show] : [menu];
+  const attachedMenuClasses = props.showNavMenu ? [navMenu, show] : [navMenu];
 
   return (
     <ul className={attachedMenuClasses.join(' ')}>

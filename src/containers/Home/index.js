@@ -20,7 +20,6 @@ class Home extends Component {
           <ExternalLink link='https://github.com/rshirts'><FaGithub /></ExternalLink>
           <ExternalLink link='https://www.linkedin.com/in/rshirts/'><FaLinkedin /></ExternalLink>
         </div>
-
       </div>
     )
   }
