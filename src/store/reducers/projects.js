@@ -3,7 +3,8 @@ const initialState = {
     {
       name: 'Online Porfolio',
       imagePath: '',
-      liveLink: 'www.randeeshirts.com',
+      localRoute: '',
+      url: 'www.randeeshirts.com',
       github: 'https://github.com/rshirts/online-portfolio'
     },
   ]

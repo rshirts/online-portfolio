@@ -28,7 +28,7 @@ class About extends Component {
         <h1 className={`${lgHeading} ${title}`}>
           About <span className={textSecondary}>Me</span>
         </h1>
-        <h2 className={smHeading}>Let me Tell you a few things...</h2>
+        <h2 className={smHeading}>A few of the details...</h2>
         <div className={aboutInfo}>
           <img src={randeePic} alt="Randee Shirts" className={bioImage} />
           <div className={bio}>

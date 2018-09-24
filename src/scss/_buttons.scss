@@ -1,0 +1,24 @@
+@import './config';
+//Button Styles
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover{
+    background: $secondaryColor;
+    color: setTextColor($secondaryColor);
+  }
+}
+
+.btnDark {
+  @extend .btn;
+  background: darken($primaryColor, 50);
+  color: #fff;
+}
+
+.btnLight {
+  @extend .btn;
+  background: lighten($primaryColor, 50);
+  color: #333;
+}

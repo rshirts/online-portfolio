@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { frame, lgHeading, smHeading, textSecondary, icons, title} from './Home.scss';
-import {FaGithub, FaLinkedin,  } from 'react-icons/fa'
+import {FaGithub, FaLinkedin } from 'react-icons/fa'
 import ExternalLink from '../../components/ExternalLink'
 
 class Home extends Component {

@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import homeReducer from './reducers/home';
 import aboutReducer from './reducers/about';
 import contactReducer from './reducers/contact';
-import workReducer from './reducers/work';
+import projectsReducer from './reducers/projects';
 
 // *** Constants ***
 
@@ -19,7 +19,7 @@ const rootReducer = combineReducers({
   home : homeReducer,
   about: aboutReducer,
   contact: contactReducer,
-  work: workReducer
+  projects: projectsReducer
 });
 
 //create a store object and assign rootReducer
