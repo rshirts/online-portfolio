@@ -10,3 +10,10 @@
   opacity: 0.9;
 }
 
+//Tablets & small Laptops
+@include mediaMd {
+  .navMenu {
+    height: 75vh;
+    transform: translateX(-100%);
+  }
+}

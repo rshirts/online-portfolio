@@ -1,0 +1,51 @@
+@import './config';
+
+.lgHeading {
+  font-size: 6rem;
+}
+
+.smHeading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(lighten($primaryColor, 2), 0.5);
+}
+
+.textSecondary {
+    color: $secondaryColor;
+}
+
+.frame {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  height: 100%;
+}
+
+.title {
+  margin-top: 8vh;
+}
+
+
+//Widescreens
+@include mediaXl {
+
+}
+
+//desktops & Laptops
+@include mediaLg {
+
+}
+
+//Tablets & small Laptops
+@include mediaMd {
+  .lgHeading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
+
+//Smartphones
+@include mediaSm {
+
+}

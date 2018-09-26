@@ -11,6 +11,7 @@ import {
   frame,
   title,
   bioWord,
+  responsiveGrid,
 } from './About.scss';
 import randeePic from '../../assets/img/RandeeNew500x500.jpg';
 
@@ -30,7 +31,7 @@ class About extends Component {
           About <span className={textSecondary}>Me</span>
         </h1>
         <h2 className={smHeading}>A few of the details...</h2>
-        <div className={aboutInfo}>
+        <div className={`${aboutInfo} ${responsiveGrid}`}>
           <img src={randeePic} alt="Randee Shirts" className={bioImage} />
           <div className={bio}>
             <h3 className={`${textSecondary} ${bioWord}`}>BIO</h3>

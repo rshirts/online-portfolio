@@ -1,1 +1,9 @@
 @import '../../scss/reset';
+
+//Tablets & small Laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+}

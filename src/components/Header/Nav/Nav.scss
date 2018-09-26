@@ -1,3 +1,4 @@
+@import '../../../scss/config';
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -13,4 +14,14 @@ nav {
 
 .hide {
   visibility: hidden;
+}
+
+//Tablets & small Laptops
+@include mediaMd {
+  grid-template-columns: 1fr;
+}
+
+//Smartphones
+@include mediaSm {
+
 }

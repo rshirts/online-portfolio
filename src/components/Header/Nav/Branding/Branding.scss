@@ -16,3 +16,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+//Tablets & small Laptops
+@include mediaMd {
+  .branding {
+    transform: translateX(100%);
+    height: 25vh;
+  }
+  .portrait {
+    width: 150px;
+    height: 150px;
+  }
+}
