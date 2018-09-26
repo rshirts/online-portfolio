@@ -28,14 +28,8 @@ $warningColor: #cca300;
   }
 }
 @mixin mediaLg {
-  @media screen and (max-width: 1280px) and (min-width: 769px) {
+  @media screen and (min-width: 769px) {
     @content;
   }
 }
-@mixin mediaXl {
-  @media screen and (min-width: 1281px){
-    @content;
-  }
-}
-
 

@@ -18,7 +18,9 @@ nav {
 
 //Tablets & small Laptops
 @include mediaMd {
-  grid-template-columns: 1fr;
+  nav {
+    grid-template-columns: 1fr;
+  }
 }
 
 //Smartphones

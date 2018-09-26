@@ -20,16 +20,12 @@
   left: 0;
   padding: 4rem;
   height: 100%;
+  max-width: 1400px;
+
 }
 
 .title {
-  margin-top: 8vh;
-}
-
-
-//Widescreens
-@include mediaXl {
-
+  margin-top: 4vh;
 }
 
 //desktops & Laptops

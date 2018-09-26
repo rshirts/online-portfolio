@@ -6,13 +6,6 @@
   justify-items: center;
 }
 
-//Widescreens
-@include mediaXl {
-  .responsiveGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 //desktops & Laptops
 @include mediaLg {
   .responsiveGrid {

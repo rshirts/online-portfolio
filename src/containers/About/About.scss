@@ -21,15 +21,6 @@
   font-size: 1.5rem;
 }
 
-//Widescreens
-@include mediaXl {
-  .responsiveGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .bio {
-    grid-column: 2 / -1;
-  }
-}
 
 //desktops & Laptops
 @include mediaLg {
@@ -48,6 +39,9 @@
   }
   .bio {
     grid-column: 2 / -1;
+  }
+  .bioWord {
+    text-align: center;
   }
 }
 

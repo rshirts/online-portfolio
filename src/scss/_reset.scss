@@ -24,6 +24,8 @@ main {
   //Calculate the height of the page - 60px for the footer.
   min-height: calc(100vh - 60px);
   background: rgba($primaryColor, $backgroundOpacity);
+  display: grid;
+  justify-items: center;
 }
 
 a {

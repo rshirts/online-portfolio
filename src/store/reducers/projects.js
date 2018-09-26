@@ -8,18 +8,18 @@ const initialState = {
       github: 'https://github.com/rshirts/online-portfolio'
     },
     {
-      name: 'Online Porfolio',
-      imageName: 'onlineportfolio.jpg',
+      name: 'Plant Nursery Catalog',
+      imageName: 'tree.jpeg',
       localRoute: '',
       url: '',
-      github: 'https://github.com/rshirts/online-portfolio'
+      github: 'https://github.com/rshirts/plant-nursery-catalog'
     },
     {
-      name: 'Online Porfolio',
-      imageName: 'onlineportfolio.jpg',
+      name: 'Kill Team Stats',
+      imageName: 'project4.jpg',
       localRoute: '',
-      url: 'http://www.randeeshirts.com',
-      github: 'https://github.com/rshirts/online-portfolio'
+      url: '',
+      github: 'https://github.com/rshirts/kill-team-stats'
     },
   ]
 }
