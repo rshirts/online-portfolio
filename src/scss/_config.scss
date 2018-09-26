@@ -1,6 +1,8 @@
 $primaryColor: #444;
-$secondaryColor: #eece1a;
+$secondaryColor:#008ae6;
 $backgroundOpacity: 0.9;
+$dangerColor: #b32d00;
+$warningColor: #cca300;
 
 .lgHeading {
   font-size: 6rem;
@@ -25,7 +27,7 @@ $backgroundOpacity: 0.9;
 }
 
 .title {
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 @mixin easeOut {
@@ -39,5 +41,27 @@ $backgroundOpacity: 0.9;
     @return lighten($primaryColor, 50);
   }
 }
+
+// //Media Query Mixins
+// @mixin mediaSm {
+//   @media screen and (max-width: 550px) {
+//     @content;
+//   }
+// }
+// @mixin mediaMd {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+// @mixin mediaLg {
+//   @media screen and (max-width: 1170px) and (min-width: 769px) {
+//     @content;
+//   }
+// }
+// @mixin mediaXl {
+//   @media screen and (min-width: 1171px){
+//     @content;
+//   }
+// }
 
 

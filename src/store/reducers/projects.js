@@ -11,7 +11,7 @@ const initialState = {
       name: 'Online Porfolio',
       imageName: 'onlineportfolio.jpg',
       localRoute: '',
-      url: 'http://www.randeeshirts.com',
+      url: '',
       github: 'https://github.com/rshirts/online-portfolio'
     },
     {

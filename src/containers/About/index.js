@@ -9,9 +9,10 @@ import {
   bioImage,
   bio,
   frame,
-  title
+  title,
+  bioWord,
 } from './About.scss';
-import randeePic from '../../assets/img/randee500x500.jpg';
+import randeePic from '../../assets/img/RandeeNew500x500.jpg';
 
 class About extends Component {
 
@@ -32,7 +33,7 @@ class About extends Component {
         <div className={aboutInfo}>
           <img src={randeePic} alt="Randee Shirts" className={bioImage} />
           <div className={bio}>
-            <h3 className={textSecondary}>BIO</h3>
+            <h3 className={`${textSecondary} ${bioWord}`}>BIO</h3>
             <p>{this.props.bio}</p>
           </div>
           {jobs}

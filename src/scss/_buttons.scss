@@ -1,10 +1,15 @@
 @import './config';
+
 //Button Styles
+$btnBackgroundDark: darken($primaryColor, 15);
+$btnBackgroundLight: lighten($primaryColor, 40);
+
 .btn {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  @include easeOut;
   &:hover{
     background: $secondaryColor;
     color: setTextColor($secondaryColor);
@@ -13,12 +18,21 @@
 
 .btnDark {
   @extend .btn;
-  background: darken($primaryColor, 50);
-  color: #fff;
+  background: $btnBackgroundDark;
+  color: setTextColor($btnBackgroundDark);
 }
 
 .btnLight {
   @extend .btn;
-  background: lighten($primaryColor, 50);
-  color: #333;
+  background: $btnBackgroundLight;
+  color: setTextColor($btnBackgroundLight);
+}
+
+.btnDisabled {
+  border: 1px solid $dangerColor;
+  &:hover {
+    background: $dangerColor;
+    border: 1px solid $btnBackgroundDark;
+    cursor: not-allowed;
+  }
 }

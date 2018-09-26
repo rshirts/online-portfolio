@@ -1,4 +1,5 @@
 @import '../../scss/config';
+@import '../../scss/responsive';
 
 .aboutInfo {
   display: grid;
@@ -16,6 +17,16 @@
   border: $secondaryColor 3px solid;
 }
 
-.bio {
-  grid-column-end: span 2;
+.bioWord {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
+
+// @media screen and (min-width: 1171px){
+//   .aboutInfo {
+//     grid-template-columns: repeat(4, 1fr);
+//   }
+//   .bio {
+//     grid-column: 2 / -1;
+//   }
+// }

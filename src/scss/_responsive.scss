@@ -1,0 +1,109 @@
+//Widescreens
+@include mediaXl {
+  .aboutInfo {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .bio {
+    grid-column: 2 / -1;
+  }
+}
+
+//desktops & Laptops
+@include mediaLg {
+  .projects,
+  .aboutInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bio {
+    grid-column: 2 / -1;
+  }
+}
+
+
+// //Media Query Mixins
+// @mixin mediaSm {
+//   @media screen and (max-width: 550px) {
+//     @content;
+//   }
+// }
+// @mixin mediaMd {
+//   @media screen and (max-width: 768px) {
+//     @content;
+//   }
+// }
+// @mixin mediaLg {
+//   @media screen and (max-width: 1170px) and (min-width: 769px) {
+//     @content;
+//   }
+// }
+// @mixin mediaXl {
+//   @media screen and (min-width: 1171px){
+//     @content;
+//   }
+// }
+
+
+
+
+
+
+//Tablets & small Laptops
+// @include mediaMd {
+//   main {
+//     align-items: center;
+//     text-align: center;
+//   }
+
+//   .lg-heading {
+//     line-height: 1;
+//     margin-bottom: 1rem;
+//   }
+
+//   ul.menu-nav,
+//   div.menu-branding {
+//     float: none;
+//     width: 100%;
+//     min-height: 0;
+
+//     &.show {
+//       transform: translateX(0);
+//     }
+//   }
+
+//   .menu-nav {
+//     height: 75vh;
+//     transform: translateX(-100%);
+//     font-size: 24px;
+//   }
+
+//   .menu-branding {
+//     height: 25vh;
+//     transform: translateX(100%);
+
+//     .portrait {
+//       height: 150px;
+//       width: 150px;
+//     }
+//   }
+
+//   .about-info {
+//     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+
+//     grid-template-columns: 1fr;
+//   }
+
+//   .projects {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// //Smartphones
+// @include mediaSm {
+//   main#home h1 {
+//     margin-top: 10vh;
+//   }
+
+//   .projects {
+//     grid-template-columns: 1fr;
+//   }
+// }

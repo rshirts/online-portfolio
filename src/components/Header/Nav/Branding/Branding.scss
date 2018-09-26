@@ -1,4 +1,4 @@
-@import '../../../../scss/NavShared';
+@import '../../../../scss/navShared';
 
 .branding {
   @include navItem;
@@ -10,7 +10,7 @@
   object-fit: fill;
   width: 250px;
   height: 250px;
-  background: url('../../../../assets/img/randee500x500.jpg');
+  background: url('../../../../assets/img/RandeeBust500x500.jpg');
   border-radius: 50%;
   border: solid 3px $secondaryColor;
   background-repeat: no-repeat;
